@@ -15,6 +15,7 @@ public class PcFisso extends PC {
         this.raid = raid;
     }
 
+
     public PcFisso(String marca, String modello, String sistemaOperativo, int memoriaRAM, int memoriaDiMassa,
             String tipoProcessore, String caseType, int tipoSchedaVideo2, int tipoSchedaAudio2) {
     }

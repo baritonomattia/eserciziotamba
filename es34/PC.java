@@ -8,16 +8,13 @@ public class PC {
     protected String modello;
     protected String sistemaOperativo;
 
-    public PC(String processore, String modello2, String processore2, int ram2, int memoriaDiMassa2, String sistemaOperativo) {
+    public PC(String processore, int ram, int memoriaDiMassa, String marca, String modello, String sistemaOperativo) {
         this.processore = processore;
-        this.ram = modello2;
-        this.memoriaDiMassa = processore2;
-        this.marca = ram2;
-        this.modello = memoriaDiMassa2;
+        this.ram = ram;
+        this.memoriaDiMassa = memoriaDiMassa;
+        this.marca = marca;
+        this.modello = modello;
         this.sistemaOperativo = sistemaOperativo;
-    }
-
-    public PC(String marca2, String modello2, String sistemaOperativo2, double memoriaRAM, double memoriaDiMassa2) {
     }
 
     public String getProcessore() {
@@ -79,7 +76,7 @@ public class PC {
                 '}';
     }
 
-   
+
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
