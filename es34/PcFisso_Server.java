@@ -1,4 +1,5 @@
 public class PcFisso_Server extends PcFisso {
+    
     private int numeroProcessori;
     private boolean raid;
 
@@ -34,8 +35,9 @@ public class PcFisso_Server extends PcFisso {
         if (this == o) return true;
         if (!(o instanceof PcFisso_Server)) return false;
         if (!super.equals(o)) return false;
-        PcFisso_Server that = (PCFisso_Server) o;
+        PcFisso_Server that = (PcFisso_Server) o;
         return numeroProcessori == that.numeroProcessori &&
                 raid == that.raid;
     }
-}
+} 
+

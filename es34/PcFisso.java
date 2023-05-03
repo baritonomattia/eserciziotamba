@@ -21,10 +21,9 @@ public class PcFisso extends PC {
     }
 
 
-    public PcFisso(String marca, String modello, String sistemaOperativo, String memoriaRAM, String memoriaDiMassa,
+    public void PcFisso(String marca, String modello, String sistemaOperativo, String memoriaRAM, String memoriaDiMassa,
             String tipoProcessore, String caseType) {
     }
-
 
     public String getTipoCase() {
         return tipoCase;
