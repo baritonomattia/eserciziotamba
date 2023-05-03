@@ -4,8 +4,8 @@ public class PcFisso_Desktop extends PcFisso {
     
     public PcFisso_Desktop(String marca, String modello, String sistemaOperativo, String memoriaRAM, String memoriaDiMassa,
     String tipoProcessore, String caseType, String tipoSchedaVideo, String tipoSchedaAudio) {
-        super(marca, modello, sistemaOperativo, numProcessori, numProcessori, memoriaRAM, memoriaDiMassa, tipoProcessore, caseType, numProcessori, raid);
-         this.tipoSchedaVideo = tipoSchedaVideo;
+        super(marca, modello, sistemaOperativo, memoriaRAM, memoriaDiMassa, tipoProcessore, caseType);
+        this.tipoSchedaVideo = tipoSchedaVideo;
         this.tipoSchedaAudio = tipoSchedaAudio;
     }
     

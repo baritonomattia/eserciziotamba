@@ -3,18 +3,25 @@ import java.util.Objects;
 public class PC {
     protected String processore;
     protected int ram;
-    protected int memoriaDiMassa;
+    protected String memoriaDiMassa;
     protected String marca;
     protected String modello;
     protected String sistemaOperativo;
 
-    public PC(String processore, int ram, int memoriaDiMassa, String marca, String modello, String sistemaOperativo) {
+    public PC(String processore, int ram, String memoriadimassa, String marca, String modello, String sistemaOperativo) {
         this.processore = processore;
         this.ram = ram;
-        this.memoriaDiMassa = memoriaDiMassa;
+        this.memoriaDiMassa = memoriadimassa;
         this.marca = marca;
         this.modello = modello;
         this.sistemaOperativo = sistemaOperativo;
+    }
+
+    public PC(String marca2, String modello2, String sistemaOperativo2, double memoriaRAM, double memoriaDiMassa2) {
+	}
+
+	public PC(String marca2, String modello2, String processore2, int ram2, int memoriaDiMassa2,
+            String sistemaOperativo2) {
     }
 
     public String getProcessore() {
@@ -33,11 +40,11 @@ public class PC {
         this.ram = ram;
     }
 
-    public int getMemoriaDiMassa() {
+    public String getMemoriaDiMassa() {
         return memoriaDiMassa;
     }
 
-    public void setMemoriaDiMassa(int memoriaDiMassa) {
+    public void setMemoriaDiMassa(String memoriaDiMassa) {
         this.memoriaDiMassa = memoriaDiMassa;
     }
 
