@@ -12,6 +12,7 @@ public class PcPortatili_Palmari extends PcPortatile {
         this.tipoMemoria = tipoMemoria;
     }
 
+
     public boolean hasBluetooth() {
         return bluetooth;
     }

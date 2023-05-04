@@ -11,6 +11,10 @@ public class PcFisso_Server extends PcFisso {
         this.raid = raid;
     }
 
+    public PcFisso_Server(String string, int i, int j, String string2, String string3, String string4, String string5,
+            int k, boolean b) {
+    }
+
     public int getNumeroProcessori() {
         return numeroProcessori;
     }
