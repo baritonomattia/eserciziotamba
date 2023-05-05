@@ -5,13 +5,14 @@ public class PcFisso_Server extends PcFisso {
 
     public PcFisso_Server(String marca, String modello, String sistemaOperativo, int memoriaRAM, int memoriaDiMassa,
                          String tipoProcessore, String caseType, int tipoSchedaVideo, int tipoSchedaAudio,
-                         int numeroProcessori, boolean raid) {
-        super(marca, modello, sistemaOperativo, memoriaRAM, memoriaDiMassa, tipoProcessore, caseType, tipoSchedaVideo, tipoSchedaAudio);
+                         int numeroProcessori, boolean raid) {    
+        super(marca, modello, sistemaOperativo, memoriaDiMassa,tipoProcessore, tipoCase, tipoSchedaVideo, tipoSchedaAudio, numeroProcessori, raid);                                
+        //super(marca, modello, sistemaOperativo, memoriaRAM, memoriaDiMassa, tipoProcessore, caseType, tipoSchedaVideo, tipoSchedaAudio);
         this.numeroProcessori = numeroProcessori;
         this.raid = raid;
     }
 
-    public PcFisso_Server(String string, int i, int j, String string2, String string3, String string4, String string5,
+    //public PcFisso_Server(String string, int i, int j, String string2, String string3, String string4, String string5,
             int k, boolean b) {
     }
 

@@ -1,5 +1,5 @@
 public class PcFisso extends PC {
-    private String tipoCase;
+    protected String TipoCase;
     private String tipoSchedaVideo;
     private String tipoSchedaAudio;
     protected int numProcessori;
@@ -16,14 +16,14 @@ public class PcFisso extends PC {
     }
 
 
-    public PcFisso(String marca, String modello, String sistemaOperativo, int memoriaRAM, int memoriaDiMassa,
+    //public PcFisso(String marca, String modello, String sistemaOperativo, int memoriaRAM, int memoriaDiMassa,
             String tipoProcessore, String caseType, int tipoSchedaVideo2, int tipoSchedaAudio2) {
     }
 
 
-    /*public void PcFisso(String marca, String modello, String sistemaOperativo, String memoriaRAM, String memoriaDiMassa,
+    //public void PcFisso(String marca, String modello, String sistemaOperativo, String memoriaRAM, String memoriaDiMassa,
             String tipoProcessore, String caseType) {
-    }*//
+    }
 
     public String getTipoCase() {
         return tipoCase;
