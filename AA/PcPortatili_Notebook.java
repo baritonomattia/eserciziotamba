@@ -36,7 +36,8 @@ public class PcPortatili_Notebook extends PcPortatile {
        }
 
     public String toString() {
-        return "Marca: " + marca + "\n" +
+        return "Pc portatile Notebook " + 
+               "Marca: " + marca + "\n" +
                "Modello: " + modello + "\n" +
                "Processore: " + processore + "\n" +
                "RAM: " + ram + " GB\n" +

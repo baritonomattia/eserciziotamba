@@ -32,7 +32,8 @@ public class PcPortatili_Palmari extends PcPortatile {
     }
 
     public String toString() {
-        return "Marca: " + marca + "\n" +
+        return "Pc portatile palmare " +        
+               "Marca: " + marca + "\n" +
                "Modello: " + modello + "\n" +
                "Processore: " + processore + "\n" +
                "RAM: " + ram + " GB\n" +

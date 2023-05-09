@@ -20,7 +20,7 @@ public class PcFisso extends PC{
 
     public String toString() {
         return 
-        "Pc Portatile {" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' + "tipo di case " + tipoCase + "}"; 
+        "Pc Fisso {" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' + "tipo di case " + tipoCase + "}"; 
     }
 
         
