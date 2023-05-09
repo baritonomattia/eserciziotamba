@@ -1,12 +1,12 @@
 package AA;
 
 public class PcPortatile extends PC{
-    public double peso;
-    public double altezza;
-    public double larghezza;
-    public double profondita;
-    public double dimensioneVideo;
-    public boolean Wifi;
+    private double peso;
+    private double altezza;
+    private double larghezza;
+    private double profondita;
+    private double dimensioneVideo;
+    private boolean Wifi;
 
     public PcPortatile(String marca, String modello, String sistemaOperativo,
                        double memoriaRAM, double memoriaDiMassa, double peso,

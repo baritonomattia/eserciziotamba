@@ -15,7 +15,7 @@ public class PcPortatili_Palmari extends PcPortatile {
     }
 
 
-    public boolean hasBluetooth() {
+    public boolean isBluetooth() {
         return bluetooth;
     }
 
@@ -31,11 +31,19 @@ public class PcPortatili_Palmari extends PcPortatile {
         this.tipoMemoria = tipoMemoria;
     }
 
-    public String tooString() {
-
-        return " Pcportatili palmari { marca " + marca + "modello " + modello + "sistemaoperativo " + sistemaOperativo + "memoria di massa " + memoriaDiMassa + "peso " + peso + "altezza " + altezza + "larghezza " + larghezza + "profondita " + profondita + "dimensioni video " + dimensioneVideo + "wifi " + Wifi + "bluetooth " + bluetooth + "tipo memoria " + tipoMemoria; 
+    public String toString() {
+        return "Marca: " + marca + "\n" +
+               "Modello: " + modello + "\n" +
+               "Processore: " + processore + "\n" +
+               "RAM: " + ram + " GB\n" +
+               "Memoria di massa: " + memoriaDiMassa + " GB\n" +
+               "Dimensioni: " + getAltezza() + "x" + getLarghezza() + "x" + getProfondita() + " cm\n" +
+               "Peso: " + getPeso() + " kg\n" +
+               "Dimensione video : " + getDimensioneVideo() + "\n" +
+               "Wifi: " + (isWifi() ? "presente" : "assente") + "\n"+ 
+               "Bluetooth: " + (isBluetooth() ? "presente" : "assente") + "\n" + 
+               "Tipo di memoria: " + tipoMemoria; 
     }
-
     
     public boolean equals(Object o) {
         if (this == o) return true;

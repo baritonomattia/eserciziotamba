@@ -35,19 +35,17 @@ public class PcPortatili_Notebook extends PcPortatile {
        return webcam == notebook.webcam;
        }
 
-       @Override
     public String toString() {
-        String s = "Marca: " + marca + "\n" +
+        return "Marca: " + marca + "\n" +
                "Modello: " + modello + "\n" +
                "Processore: " + processore + "\n" +
                "RAM: " + ram + " GB\n" +
                "Memoria di massa: " + memoriaDiMassa + " GB\n" +
-               "Dimensioni: " + altezza + "x" + larghezza + "x" + profondita + " cm\n" +
-               "Peso: " + peso + " kg\n" +
-               "Dimensione video : " + dimensioneVideo + "\n" +
+               "Dimensioni: " + getAltezza() + "x" + getLarghezza() + "x" + getProfondita() + " cm\n" +
+               "Peso: " + getPeso() + " kg\n" +
+               "Dimensione video : " + getDimensioneVideo() + "\n" +
                "Webcam: " + (webcam ? "presente" : "assente") + "\n" +
-               "Wifi: " + (Wifi ? "presente" : "assente") + "\n";
-    return s;
-}
+               "Wifi: " + (isWifi() ? "presente" : "assente") + "\n";
+    }
 }
       

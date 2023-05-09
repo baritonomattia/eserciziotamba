@@ -98,7 +98,4 @@ public class PC {
                 Objects.equals(sistemaOperativo, pc.sistemaOperativo);
     }
 
-    public int hashCode() {
-        return Objects.hash(processore, ram, memoriaDiMassa, marca, modello, sistemaOperativo);
-    }
 }

@@ -17,11 +17,12 @@ public class PcFisso extends PC{
         return tipoCase;
     }
 
-    @Override
+
     public String toString() {
-        return "PCFisso{" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' +
-        "tipoCase=" + tipoCase + "}";
+        return 
+        "Pc Portatile {" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' + "tipo di case " + tipoCase + "}"; 
     }
+
         
     
 }
