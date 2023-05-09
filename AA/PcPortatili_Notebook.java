@@ -49,13 +49,5 @@ public class PcPortatili_Notebook extends PcPortatile {
                "Wifi: " + (Wifi ? "presente" : "assente") + "\n";
     return s;
 }
-
-
-   }
-   
-   
-   
-   
-   
-   
-   
+}
+      
