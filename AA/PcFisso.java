@@ -19,7 +19,8 @@ public class PcFisso extends PC{
 
     @Override
     public String toString() {
-        return "PcFisso [tipoCase=" + tipoCase + "]";
+        return "PCFisso{" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' +
+        "tipoCase=" + tipoCase + "}";
     }
         
     

@@ -31,10 +31,12 @@ public class PcPortatili_Palmari extends PcPortatile {
         this.tipoMemoria = tipoMemoria;
     }
 
-    public String toString() {
-        
-        return " Bluetooth: " + (bluetooth ? "presente" : "assente") + ", Tipo di memoria di massa: " + tipoMemoria;
+    public String tooString() {
+
+        return " Pcportatili palmari { marca " + marca + "modello " + modello + "sistemaoperativo " + sistemaOperativo + "memoria di massa " + memoriaDiMassa + "peso " + peso + "altezza " + altezza + "larghezza " + larghezza + "profondita " + profondita + "dimensioni video " + dimensioneVideo + "wifi " + Wifi + "bluetooth " + bluetooth + "tipo memoria " + tipoMemoria; 
     }
+
+    
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof PcPortatili_Palmari)) return false;

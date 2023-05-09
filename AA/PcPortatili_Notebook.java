@@ -1,5 +1,6 @@
 package AA;
 
+
 public class PcPortatili_Notebook extends PcPortatile {
     private boolean webcam;
     
@@ -8,6 +9,8 @@ public class PcPortatili_Notebook extends PcPortatile {
        super(marca, modello, sistemaOperativo, memoriaRAM, memoriaDiMassa, peso, altezza, larghezza, profondita, dimensioneVideo, wifi);
        this.webcam = webcam;
    }
+
+   
     public boolean hasWebcam()
     {
        return webcam;
@@ -17,9 +20,9 @@ public class PcPortatili_Notebook extends PcPortatile {
    {
        this.webcam = webcam;
    }   
-    public String toString(){
+    /*public String tooString(){
        return  ", Webcam: " + (webcam ? "presente" : "assente");
-   }
+   }*/
    public boolean equals(Object o){
    
         if (this == o) 
@@ -31,7 +34,23 @@ public class PcPortatili_Notebook extends PcPortatile {
            PcPortatili_Notebook notebook = (PcPortatili_Notebook) o;
        return webcam == notebook.webcam;
        }
-   
+
+       @Override
+    public String toString() {
+        String s = "Marca: " + marca + "\n" +
+               "Modello: " + modello + "\n" +
+               "Processore: " + processore + "\n" +
+               "RAM: " + ram + " GB\n" +
+               "Memoria di massa: " + memoriaDiMassa + " GB\n" +
+               "Dimensioni: " + altezza + "x" + larghezza + "x" + profondita + " cm\n" +
+               "Peso: " + peso + " kg\n" +
+               "Dimensione video : " + dimensioneVideo + "\n" +
+               "Webcam: " + (webcam ? "presente" : "assente") + "\n" +
+               "Wifi: " + (Wifi ? "presente" : "assente") + "\n";
+    return s;
+}
+
+
    }
    
    

@@ -1,12 +1,12 @@
 package AA;
 
-public abstract class PcPortatile extends PC{
-    private double peso;
-    private double altezza;
-    private double larghezza;
-    private double profondita;
-    private double dimensioneVideo;
-    private boolean Wifi;
+public class PcPortatile extends PC{
+    public double peso;
+    public double altezza;
+    public double larghezza;
+    public double profondita;
+    public double dimensioneVideo;
+    public boolean Wifi;
 
     public PcPortatile(String marca, String modello, String sistemaOperativo,
                        double memoriaRAM, double memoriaDiMassa, double peso,
@@ -71,9 +71,10 @@ public abstract class PcPortatile extends PC{
 
     public String toString() {
         return 
+        "Pc Portatile {" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' +
                 "Peso: " + peso + " kg\n" +
                 "Dimensioni: " + larghezza + " x " + altezza + " x " + profondita + " cm\n" +
                 "Dimensione video: " + dimensioneVideo + " pollici\n" +
-                "Wifi: " + (Wifi ? "Sì" : "No") + "\n";
+                "Wifi: " + (Wifi ? "Sì" : "No") ;
     }
 }

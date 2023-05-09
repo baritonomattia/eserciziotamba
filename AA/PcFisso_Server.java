@@ -27,10 +27,11 @@ public class PcFisso_Server extends PcFisso{
         this.raid = raid;
     }
 
-
     public String toString() {
-        return "PcFisso_Server [numProcessori=" + numProcessori + ", raid=" + raid + "]";
+        return "PCFisso{" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' +
+        "numprocessori" + numProcessori +  '\'' + "raid " + raid + "}";
     }
+
     
     public boolean equals(Object o) {
         if (this == o) return true;

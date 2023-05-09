@@ -26,11 +26,12 @@ public class PcFisso_Desktop extends PcFisso{
         this.tipoSchedaAudio = tipoSchedaAudio;
     }
 
-    @Override
+
     public String toString() {
-        return "PcFisso_Desktop [tipoSchedaVideo=" + tipoSchedaVideo + ", tipoSchedaAudio=" + tipoSchedaAudio + "]";
+        return "PCFisso{" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' +
+        "tipoSchedaVideo " + tipoSchedaVideo + '\'' + "tipoSchedaAudio " + tipoSchedaAudio + "}";
     }
-    
+   
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof PcFisso_Desktop)) return false;
