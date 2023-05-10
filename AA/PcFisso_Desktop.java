@@ -3,9 +3,9 @@ package AA;
 public class PcFisso_Desktop extends PcFisso{
     private String tipoSchedaVideo;
     private String tipoSchedaAudio;
-    
-    public PcFisso_Desktop(String processore, int ram, String memoriaDiMassa, String marca, String modello, String sistemaOperativo, String tipoSchedaVideo, String tipoSchedaAudio ){
-        super(processore, ram, memoriaDiMassa, marca, modello, sistemaOperativo);
+    public PcFisso_Desktop(String processore, int ram, String memoriaDiMassa, String marca, String modello, String sistemaOperativo, String tipoSchedaVideo, String tipoSchedaAudio ,String tipoCase)
+    {
+        super(processore, ram, memoriaDiMassa, marca, modello, sistemaOperativo,tipoCase);
         this.tipoSchedaVideo = tipoSchedaVideo;
         this.tipoSchedaAudio = tipoSchedaAudio;
     }
@@ -28,7 +28,7 @@ public class PcFisso_Desktop extends PcFisso{
 
 
     public String toString() {
-        return "PCFisso{" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' +
+        return "PCFisso{" + "processore='" + getProcessore() + '\'' + ", ram=" + getRam() + ", memoriaDiMassa=" + getMemoriaDiMassa() + ", marca='" + getMarca() + '\'' + ", modello='" + getModello() + '\'' + ", sistemaOperativo='" + getSistemaOperativo() + '\'' +
         "tipoSchedaVideo " + tipoSchedaVideo + '\'' + "tipoSchedaAudio " + tipoSchedaAudio + "}";
     }
    

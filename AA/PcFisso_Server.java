@@ -4,8 +4,8 @@ public class PcFisso_Server extends PcFisso{
     private int numProcessori; 
     private boolean raid;
 
-    public PcFisso_Server(String processore, int ram, String memoriaDiMassa, String marca, String modello, String sistemaOperativo, int numProcessori, boolean raid){
-        super(processore, ram, memoriaDiMassa, marca, modello, sistemaOperativo);
+    public PcFisso_Server(String processore, int ram, String memoriaDiMassa, String marca, String modello, String sistemaOperativo, int numProcessori, boolean raid,String tipoCase){
+        super(processore, ram, memoriaDiMassa, marca, modello, sistemaOperativo,tipoCase);
         this.numProcessori = numProcessori; 
         this.raid = raid;
          
@@ -28,7 +28,7 @@ public class PcFisso_Server extends PcFisso{
     }
 
     public String toString() {
-        return "PCFisso{" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' +
+        return "PCFisso{" + "processore='" + getProcessore() + '\'' + ", ram=" + getRam() + ", memoriaDiMassa=" + getMemoriaDiMassa() + ", marca='" + getMarca() + '\'' + ", modello='" + getModello() + '\'' + ", sistemaOperativo='" + getSistemaOperativo() + '\'' +
         "numprocessori" + numProcessori +  '\'' + "raid " + raid + "}";
     }
 

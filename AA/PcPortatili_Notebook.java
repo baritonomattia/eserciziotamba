@@ -4,9 +4,8 @@ package AA;
 public class PcPortatili_Notebook extends PcPortatile {
     private boolean webcam;
     
-    public PcPortatili_Notebook(String marca, String modello, String sistemaOperativo, int memoriaRAM, int memoriaDiMassa, double peso,
-    double altezza, double larghezza, double profondita, double dimensioneVideo, boolean wifi, boolean webcam) {
-       super(marca, modello, sistemaOperativo, memoriaRAM, memoriaDiMassa, peso, altezza, larghezza, profondita, dimensioneVideo, wifi);
+    public PcPortatili_Notebook(String processore,int ram, String memoriaDiMassa,String marca, String modello, String sistemaOperativo,  double peso,double altezza, double larghezza, double profondita, double dimensioneVideo, boolean wifi, boolean webcam) {
+       super(processore,ram,memoriaDiMassa, marca, modello, sistemaOperativo, peso, altezza, larghezza, profondita, dimensioneVideo, wifi);
        this.webcam = webcam;
    }
 
@@ -20,9 +19,7 @@ public class PcPortatili_Notebook extends PcPortatile {
    {
        this.webcam = webcam;
    }   
-    /*public String tooString(){
-       return  ", Webcam: " + (webcam ? "presente" : "assente");
-   }*/
+    
    public boolean equals(Object o){
    
         if (this == o) 
@@ -35,18 +32,21 @@ public class PcPortatili_Notebook extends PcPortatile {
        return webcam == notebook.webcam;
        }
 
+    
     public String toString() {
         return "Pc portatile Notebook " + 
-               "Marca: " + marca + "\n" +
-               "Modello: " + modello + "\n" +
-               "Processore: " + processore + "\n" +
-               "RAM: " + ram + " GB\n" +
-               "Memoria di massa: " + memoriaDiMassa + " GB\n" +
-               "Dimensioni: " + getAltezza() + "x" + getLarghezza() + "x" + getProfondita() + " cm\n" +
-               "Peso: " + getPeso() + " kg\n" +
-               "Dimensione video : " + getDimensioneVideo() + "\n" +
-               "Webcam: " + (webcam ? "presente" : "assente") + "\n" +
-               "Wifi: " + (isWifi() ? "presente" : "assente") + "\n";
+               "Marca: " + getMarca() +
+               ", Modello: " + getModello() +
+               ", Sistema Operativo: " + getSistemaOperativo() +
+               ", Memoria di massa: " + getMemoriaDiMassa() + " GB" +
+               ", Peso: " + getPeso() + " kg" +
+               ", Altezza: " + getAltezza() + " cm" +
+               ", Larghezza: " + getLarghezza() + " cm" +
+               ", Profondità: " + getProfondita() + " cm" +
+               ", Dimensione Video: " + getDimensioneVideo() + " pollici" +
+               ", Wifi: " + isWifi() +
+               ", Webcam: " + hasWebcam();
     }
+    
 }
       

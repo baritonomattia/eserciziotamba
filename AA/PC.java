@@ -18,42 +18,32 @@ public class PC {
         this.modello = modello;
         this.sistemaOperativo = sistemaOperativo;
     }
-
-    public PC(String marca2, String modello2, String sistemaOperativo2, double memoriaRAM, double memoriaDiMassa2) {
-	}
-
 	public PC(String marca2, String modello2, String processore2, int ram2, int memoriaDiMassa2,
             String sistemaOperativo2) {
     }
-
     public String getProcessore() {
         return processore;
     }
-
     public void setProcessore(String processore) {
         this.processore = processore;
     }
-
     public int getRam() {
         return ram;
     }
-
     public void setRam(int ram) {
         this.ram = ram;
     }
-
+    public PC(String marca2, String modello2, String sistemaOperativo2, double memoriaRAM, double memoriaDiMassa2) {
+	}
     public String getMemoriaDiMassa() {
         return memoriaDiMassa;
     }
-
     public void setMemoriaDiMassa(String memoriaDiMassa) {
         this.memoriaDiMassa = memoriaDiMassa;
     }
-
     public String getMarca() {
         return marca;
     }
-
     public void setMarca(String marca) {
         this.marca = marca;
     }

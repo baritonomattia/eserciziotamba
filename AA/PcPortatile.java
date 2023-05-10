@@ -8,17 +8,15 @@ public class PcPortatile extends PC{
     private double dimensioneVideo;
     private boolean Wifi;
 
-    public PcPortatile(String marca, String modello, String sistemaOperativo,
-                       double memoriaRAM, double memoriaDiMassa, double peso,
-                       double altezza, double larghezza, double profondita,
-                       double dimensioneVideo, boolean haWifi) {
-        super(marca, modello, sistemaOperativo, memoriaRAM, memoriaDiMassa);
+    //String processore, int ram, String memoriadimassa, String marca, String modello, String sistemaOperativo
+    public PcPortatile(String processore, int ram, String memoriadimassa, String marca, String modello, String sistemaOperativo,double peso,double altezza, double larghezza, double profondita,double dimensioneVideo, boolean haWifi) {
+        super(processore,ram,memoriadimassa,marca,modello,sistemaOperativo);
         this.peso = peso;
         this.altezza = altezza;
         this.larghezza = larghezza;
         this.profondita = profondita;
         this.dimensioneVideo = dimensioneVideo;
-        this.Wifi = Wifi;
+        this.Wifi = haWifi;
     }
 
     public double getPeso() {
@@ -71,10 +69,12 @@ public class PcPortatile extends PC{
 
     public String toString() {
         return 
-        "Pc Portatile {" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' +
+        "Pc Portatile {" + "processore='" + getProcessore() + '\'' + ", ram=" + getRam() + ", memoriaDiMassa=" + getMemoriaDiMassa() + ", marca='" + getMarca() + '\'' + ", modello='" + getMarca() + '\'' + ", sistemaOperativo='" + getSistemaOperativo() + '\'' +
                 "Peso: " + peso + " kg\n" +
                 "Dimensioni: " + larghezza + " x " + altezza + " x " + profondita + " cm\n" +
                 "Dimensione video: " + dimensioneVideo + " pollici\n" +
                 "Wifi: " + (Wifi ? "Sì" : "No") ;
     }
+
+    
 }

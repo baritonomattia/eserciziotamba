@@ -3,7 +3,7 @@ package AA;
 public class PcFisso extends PC{
     private String tipoCase;
         
-    public PcFisso(String processore, int ram, String memoriaDiMassa, String marca, String modello, String sistemaOperativo){
+    public PcFisso(String processore, int ram, String memoriaDiMassa, String marca, String modello, String sistemaOperativo,String tipoCase){
         super(processore, ram, memoriaDiMassa, marca, modello, sistemaOperativo); 
         this.tipoCase = tipoCase; 
         
@@ -20,7 +20,7 @@ public class PcFisso extends PC{
 
     public String toString() {
         return 
-        "Pc Fisso {" + "processore='" + processore + '\'' + ", ram=" + ram + ", memoriaDiMassa=" + memoriaDiMassa + ", marca='" + marca + '\'' + ", modello='" + modello + '\'' + ", sistemaOperativo='" + sistemaOperativo + '\'' + "tipo di case " + tipoCase + "}"; 
+        "Pc Fisso {" + "processore='" + getProcessore() + '\'' + ", ram=" + getRam() + ", memoriaDiMassa=" + getMemoriaDiMassa() + ", marca='" + getMarca() + '\'' + ", modello='" + getModello() + '\'' + ", sistemaOperativo='" + getSistemaOperativo() + '\'' + "tipo di case " + tipoCase + "}"; 
     }
 
         
