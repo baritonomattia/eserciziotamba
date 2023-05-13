@@ -72,7 +72,7 @@ public class PC {
                 ", marca='" + marca + '\n' +   
                 ", modello='" + modello + '\n' +
                 ", sistemaOperativo='" + sistemaOperativo + 
-                '}';
+                '}' + '\n';
     }
 
 

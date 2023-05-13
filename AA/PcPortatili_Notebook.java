@@ -32,20 +32,20 @@ public class PcPortatili_Notebook extends PcPortatile {
        return webcam == notebook.webcam;
        }
 
-    
+
+
     public String toString() {
-        return "Pc portatile Notebook " + 
-               "Marca: " + getMarca() +
-               ", Modello: " + getModello() +
-               ", Sistema Operativo: " + getSistemaOperativo() +
-               ", Memoria di massa: " + getMemoriaDiMassa() + " GB" +
-               ", Peso: " + getPeso() + " kg" +
-               ", Altezza: " + getAltezza() + " cm" +
-               ", Larghezza: " + getLarghezza() + " cm" +
-               ", Profondità: " + getProfondita() + " cm" +
-               ", Dimensione Video: " + getDimensioneVideo() + " pollici" +
-               ", Wifi: " + isWifi() +
-               ", Webcam: " + hasWebcam();
+        return "Pc portatile palmare " + '\n' +   
+               "Marca: " + getMarca()  + '\n' +   
+               "Modello: " + getModello() + '\n' +   
+               "Processore: " + getProcessore() + '\n' +   
+               "RAM: " + getRam() + " GB "+ '\n' +   
+               "Memoria di massa: " + getMemoriaDiMassa() + " GB " + '\n' +   
+               "Dimensioni: " + getAltezza() + "x" + getLarghezza() + "x" + getProfondita() + " cm " + '\n' +   
+               "Peso: " + getPeso() + " kg " + '\n' +   
+               "Dimensione video : " + getDimensioneVideo() + "" + '\n' +   
+               "Wifi: " + (isWifi() ? "presente" : "assente") + ""+ '\n' +   
+               "Webcam: " + hasWebcam() + "} " + "\n"; 
     }
     
 }

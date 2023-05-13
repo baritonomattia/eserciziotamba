@@ -41,7 +41,7 @@ public class PcPortatili_Palmari extends PcPortatile {
                "Dimensione video : " + getDimensioneVideo() + "" + '\n' +   
                "Wifi: " + (isWifi() ? "presente" : "assente") + ""+ '\n' +   
                "Bluetooth: " + (isBluetooth() ? "presente" : "assente") + "" + '\n' +    
-               "Tipo di memoria: " + tipoMemoria; 
+               "Tipo di memoria: " + tipoMemoria + '\n' + "}" +  + '\n';  
     }
     
     public boolean equals(Object o) {

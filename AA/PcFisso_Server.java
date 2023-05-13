@@ -37,7 +37,7 @@ public class PcFisso_Server extends PcFisso{
                "Sistema operativo: " + getSistemaOperativo() + '\n' +
                "Numero di processori: " + numProcessori + '\n' +
                "RAID: " + raid + '\n' +
-               "}";
+               "}"+ '\n';
     }
     
 

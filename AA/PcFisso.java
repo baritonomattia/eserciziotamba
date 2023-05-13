@@ -26,7 +26,7 @@ public class PcFisso extends PC{
                "RAM: " + getRam() + " GB "+ '\n' + 
                "Memoria di massa: " + getMemoriaDiMassa() + " GB " + '\n' + 
                "Tipo di case: " + tipoCase + '\n' +
-               "}";
+               "}"+ '\n';
     }
     
         

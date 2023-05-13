@@ -68,13 +68,20 @@ public class PcPortatile extends PC{
     }
 
     public String toString() {
-        return 
-        "Pc Portatile {" + "processore='" + getProcessore() + '\'' + ", ram=" + getRam() + ", memoriaDiMassa=" + getMemoriaDiMassa() + ", marca='" + getMarca() + '\'' + ", modello='" + getMarca() + '\'' + ", sistemaOperativo='" + getSistemaOperativo() + '\'' +
-                "Peso: " + peso + " kg\n" +
-                "Dimensioni: " + larghezza + " x " + altezza + " x " + profondita + " cm\n" +
-                "Dimensione video: " + dimensioneVideo + " pollici\n" +
-                "Wifi: " + (Wifi ? "Sì" : "No") ;
+        return "Pc Portatile {" + '\n' + 
+               "Marca: " + getMarca() + '\n' + 
+               "Modello: " + getModello() + '\n' + 
+               "Processore: " + getProcessore() + '\n' + 
+               "RAM: " + getRam() + " GB "+ '\n' + 
+               "Memoria di massa: " + getMemoriaDiMassa() + " GB " + '\n' +
+               "Sistema operativo: " + getSistemaOperativo() + '\n' +
+               "Peso: " + peso + " kg\n" +
+               "Dimensioni: " + larghezza + " x " + altezza + " x " + profondita + " cm\n" +
+               "Dimensione video: " + dimensioneVideo + " pollici\n" +
+               "Wifi: " + (Wifi ? "Sì" : "No") +
+               "}"+ '\n';
     }
+    
 
     
 }
