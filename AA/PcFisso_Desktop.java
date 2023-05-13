@@ -28,7 +28,7 @@ public class PcFisso_Desktop extends PcFisso{
 
 
     public String toString() {
-        return "PCFisso{" + "processore='" + getProcessore() + '\'' + ", ram=" + getRam() + ", memoriaDiMassa=" + getMemoriaDiMassa() + ", marca='" + getMarca() + '\'' + ", modello='" + getModello() + '\'' + ", sistemaOperativo='" + getSistemaOperativo() + '\'' +
+        return "PCFisso{" + "processore='" + getProcessore() + '\n' + ", ram=" + getRam() + ", memoriaDiMassa=" + getMemoriaDiMassa() + ", marca='" + getMarca() + '\'' + ", modello='" + getModello() + '\'' + ", sistemaOperativo='" + getSistemaOperativo() + '\'' +
         "tipoSchedaVideo " + tipoSchedaVideo + '\'' + "tipoSchedaAudio " + tipoSchedaAudio + "}";
     }
    

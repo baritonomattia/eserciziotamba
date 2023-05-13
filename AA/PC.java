@@ -66,12 +66,12 @@ public class PC {
 
     public String toString() {
         return "PC{" +
-                "processore='" + processore + '\'' +
-                ", ram=" + ram +
-                ", memoriaDiMassa=" + memoriaDiMassa +
-                ", marca='" + marca + '\'' +
-                ", modello='" + modello + '\'' +
-                ", sistemaOperativo='" + sistemaOperativo + '\'' +
+                "processore='" + processore +'\n' +  
+                ", ram=" + ram + '\n' +   
+                ", memoriaDiMassa=" + memoriaDiMassa + '\n' +   
+                ", marca='" + marca + '\n' +   
+                ", modello='" + modello + '\n' +
+                ", sistemaOperativo='" + sistemaOperativo + 
                 '}';
     }
 

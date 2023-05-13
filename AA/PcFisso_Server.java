@@ -28,9 +28,18 @@ public class PcFisso_Server extends PcFisso{
     }
 
     public String toString() {
-        return "PCFisso{" + "processore='" + getProcessore() + '\'' + ", ram=" + getRam() + ", memoriaDiMassa=" + getMemoriaDiMassa() + ", marca='" + getMarca() + '\'' + ", modello='" + getModello() + '\'' + ", sistemaOperativo='" + getSistemaOperativo() + '\'' +
-        "numprocessori" + numProcessori +  '\'' + "raid " + raid + "}";
+        return "PCFisso{" + '\n' + 
+               "Marca: " + getMarca() + '\n' + 
+               "Modello: " + getModello() + '\n' + 
+               "Processore: " + getProcessore() + '\n' + 
+               "RAM: " + getRam() + " GB "+ '\n' + 
+               "Memoria di massa: " + getMemoriaDiMassa() + " GB " + '\n' +
+               "Sistema operativo: " + getSistemaOperativo() + '\n' +
+               "Numero di processori: " + numProcessori + '\n' +
+               "RAID: " + raid + '\n' +
+               "}";
     }
+    
 
     
     public boolean equals(Object o) {

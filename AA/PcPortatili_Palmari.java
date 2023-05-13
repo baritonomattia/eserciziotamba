@@ -30,17 +30,17 @@ public class PcPortatili_Palmari extends PcPortatile {
     }
 
     public String toString() {
-        return "Pc portatile palmare " +        
-               "Marca: " + getMarca()  +
-               "Modello: " + getModello() +
-               "Processore: " + getProcessore() +
-               "RAM: " + getRam() + " GB "+
-               "Memoria di massa: " + getMemoriaDiMassa() + " GB " +
-               "Dimensioni: " + getAltezza() + "x" + getLarghezza() + "x" + getProfondita() + " cm " +
-               "Peso: " + getPeso() + " kg " +
-               "Dimensione video : " + getDimensioneVideo() + "" +
-               "Wifi: " + (isWifi() ? "presente" : "assente") + ""+ 
-               "Bluetooth: " + (isBluetooth() ? "presente" : "assente") + "" + 
+        return "Pc portatile palmare " + '\n' +   
+               "Marca: " + getMarca()  + '\n' +   
+               "Modello: " + getModello() + '\n' +   
+               "Processore: " + getProcessore() + '\n' +   
+               "RAM: " + getRam() + " GB "+ '\n' +   
+               "Memoria di massa: " + getMemoriaDiMassa() + " GB " + '\n' +   
+               "Dimensioni: " + getAltezza() + "x" + getLarghezza() + "x" + getProfondita() + " cm " + '\n' +   
+               "Peso: " + getPeso() + " kg " + '\n' +   
+               "Dimensione video : " + getDimensioneVideo() + "" + '\n' +   
+               "Wifi: " + (isWifi() ? "presente" : "assente") + ""+ '\n' +   
+               "Bluetooth: " + (isBluetooth() ? "presente" : "assente") + "" + '\n' +    
                "Tipo di memoria: " + tipoMemoria; 
     }
     
