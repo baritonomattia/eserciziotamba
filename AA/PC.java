@@ -2,7 +2,7 @@ package AA;
 
 import java.util.Objects;
 
-public class PC {
+    abstract public class PC {
     protected String processore;
     protected int ram;
     protected String memoriaDiMassa;

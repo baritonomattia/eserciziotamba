@@ -1,9 +1,6 @@
 package AA;
 public class Test{
     public static void main(String[] args) {
-
-        PC p1 = new PC("Intel Core i7", 16, "512 GB SSD", "HP", "EliteBook", "Windows 10 Pro"); 
-        System.out.println(p1);
         
         PcFisso p2 = new PcFisso("Intel Core i5", 8, "1 TB HDD", "Dell", "OptiPlex", "Windows 10 Pro","case"); 
         System.out.println(p2);
