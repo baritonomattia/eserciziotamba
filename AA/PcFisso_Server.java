@@ -42,14 +42,7 @@ public class PcFisso_Server extends PcFisso{
     
 
     
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof PcFisso_Server)) return false;
-        if (!super.equals(o)) return false;
-        PcFisso_Server that = (PcFisso_Server) o;
-        return numProcessori == that.numProcessori &&
-                raid == that.raid;
-    }
+    
     
     
 }

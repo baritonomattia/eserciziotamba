@@ -20,18 +20,6 @@ public class PcPortatili_Notebook extends PcPortatile {
        this.webcam = webcam;
    }   
     
-   public boolean equals(Object o){
-   
-        if (this == o) 
-           return true;
-        if (!(o instanceof PcPortatili_Notebook)) 
-           return false;
-       if (!super.equals(o)) 
-           return false;
-           PcPortatili_Notebook notebook = (PcPortatili_Notebook) o;
-       return webcam == notebook.webcam;
-       }
-
 
 
     public String toString() {

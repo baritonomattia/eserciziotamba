@@ -40,15 +40,7 @@ public class PcFisso_Desktop extends PcFisso{
                "}" + '\n';
     }
     
-   
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof PcFisso_Desktop)) return false;
-        if (!super.equals(o)) return false;
-        PcFisso_Desktop that = (PcFisso_Desktop) o;
-        return tipoSchedaVideo == that.tipoSchedaVideo &&
-        tipoSchedaAudio == that.tipoSchedaAudio;
-         }
+
     
 
 

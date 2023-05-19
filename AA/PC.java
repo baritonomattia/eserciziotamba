@@ -2,13 +2,13 @@ package AA;
 
 import java.util.Objects;
 
-    abstract public class PC {
-    protected String processore;
-    protected int ram;
-    protected String memoriaDiMassa;
-    protected String marca;
-    protected String modello;
-    protected String sistemaOperativo;
+abstract public class PC {
+    private String processore;
+    private int ram;
+    private String memoriaDiMassa;
+    private String marca;
+    private String modello;
+    private String sistemaOperativo;
 
     public PC(String processore, int ram, String memoriadimassa, String marca, String modello, String sistemaOperativo) {
         this.processore = processore;

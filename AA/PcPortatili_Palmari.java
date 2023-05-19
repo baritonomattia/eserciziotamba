@@ -44,12 +44,5 @@ public class PcPortatili_Palmari extends PcPortatile {
                "Tipo di memoria: " + tipoMemoria + '\n' + "}" +  + '\n';  
     }
     
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof PcPortatili_Palmari)) return false;
-        if (!super.equals(o)) return false;
-        PcPortatili_Palmari palmare = (PcPortatili_Palmari) o;
-        return bluetooth == palmare.bluetooth &&
-                Objects.equals(tipoMemoria, palmare.tipoMemoria);
-    }
+    
 }
