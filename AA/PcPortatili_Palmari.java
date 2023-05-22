@@ -1,6 +1,5 @@
 package AA;
 
-import java.util.Objects;
 
 public class PcPortatili_Palmari extends PcPortatile {
     private boolean bluetooth;

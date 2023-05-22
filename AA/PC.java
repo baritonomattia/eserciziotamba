@@ -18,9 +18,7 @@ abstract public class PC {
         this.modello = modello;
         this.sistemaOperativo = sistemaOperativo;
     }
-	public PC(String marca2, String modello2, String processore2, int ram2, int memoriaDiMassa2,
-            String sistemaOperativo2) {
-    }
+	
     public String getProcessore() {
         return processore;
     }

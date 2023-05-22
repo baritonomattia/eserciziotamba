@@ -27,6 +27,7 @@ public class PcFisso_Desktop extends PcFisso{
     }
 
 
+
     public String toString() {
         return "PCFisso{" + '\n' + 
                "Marca: " + getMarca() + '\n' + 
@@ -40,8 +41,4 @@ public class PcFisso_Desktop extends PcFisso{
                "}" + '\n';
     }
     
-
-    
-
-
 }
