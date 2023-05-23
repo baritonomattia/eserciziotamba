@@ -9,7 +9,7 @@ public class Main {
         int scelta  = -1; 
         System.out.println("Benvenuto nel ristorante");
         do {
-            System.out.println("1. Aggiungi ingredienti");
+            System.out.println("1. Aggiungi panino");
             System.out.println("2. Cancella ingredienti");
             System.out.println("3. Stampa ingredienti");
             System.out.println("4. Ordina panini ");
@@ -20,7 +20,7 @@ public class Main {
                 r.aggiungiIngrediente();
                 break;
             case 2:
-                r.cancellaIngrediente();
+                r.rimuoviIngrediente();
                 break;
             case 3:
                 r.visualizzaPanino();
