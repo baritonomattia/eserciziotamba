@@ -1,20 +1,20 @@
 package es_Paninoteca;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Scanner;
 
 public class Panino {
     private String tipoPane;
     private ArrayList<String> ingredienti;
-    
     public String getTipoPane() {
         return tipoPane;
     }
-    public Panino(String tipoPane, ArrayList<String> ingredienti) {
+
+    public Panino(String tipoPane) {
         this.tipoPane = tipoPane;
-        this.ingredienti = ingredienti;
+        ingredienti = new ArrayList<String>();
     }
+
+    
     public ArrayList<String> getIngredienti() {
         return ingredienti;
     }
@@ -30,4 +30,5 @@ public class Panino {
     public String toString() {
         return "Panino [tipoPane=" + tipoPane + ", ingredienti=" + ingredienti + "]";
     }
+    
 }

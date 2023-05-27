@@ -10,24 +10,21 @@ public class Main {
         System.out.println("Benvenuto nel ristorante");
         do {
             System.out.println("1. Aggiungi panino");
-            System.out.println("2. Cancella ingredienti");
-            System.out.println("3. Stampa ingredienti");
-            System.out.println("4. Ordina panini ");
+            System.out.println("2. Stampa ingredienti");
+            System.out.println("3. Ordina panini ");
             System.out.println("0. Esci");   
             scelta = sca.nextInt(); 
             switch (scelta) {
             case 1:
-                r.aggiungiIngrediente();
+                r.aggiungiPanino();
                 break;
             case 2:
-                r.rimuoviIngrediente();
+                r.stampaPanini();
                 break;
             case 3:
-                r.visualizzaPanino();
+                r.ordinaPane();;
                 break;
-            case 4: 
-                r.ordinaPanino(); 
-                break;     
+            
             case 0:
                 System.out.println("Arrivederci");
                 break;
