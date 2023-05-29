@@ -40,5 +40,7 @@ public class Main {
                 System.out.println("Scelta non valida");
             }
         } while(scelta != 0); 
+
+        
     }
 }

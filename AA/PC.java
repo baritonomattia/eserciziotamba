@@ -1,6 +1,7 @@
 package AA;
 
 import java.util.Objects;
+import java.util.function.IntFunction;
 
 abstract public class PC {
     private String processore;
@@ -86,4 +87,5 @@ abstract public class PC {
                 Objects.equals(sistemaOperativo, pc.sistemaOperativo);
     }
 
+    
 }
