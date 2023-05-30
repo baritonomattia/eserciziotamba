@@ -21,8 +21,8 @@ public class Lista {
         if(pos == 0) inserisciInTesta(info);
         else {
             while(i < pos - 1){
-                testa = p.getLink(); ++i; 
-                ++i;
+                testa = p.getLink(); 
+                ++i; 
             }
             p.setLink(testa.getLink());
             testa.setLink(p);
