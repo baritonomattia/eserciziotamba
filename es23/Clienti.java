@@ -9,7 +9,6 @@ public class Clienti {
     public Clienti(){
         cliente = new TreeMap<Integer, Cliente>(); 
     }
-
     public void aggiungi(Cliente a) throws ClienteNonEsiste {
         if(!cliente.containsKey(a.getCodiceCliente())){
             cliente.put(a.getCodiceCliente(), a.clone());
