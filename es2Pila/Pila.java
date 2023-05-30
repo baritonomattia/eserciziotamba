@@ -14,6 +14,6 @@ public class Pila {
     }
 
     public void pop(){
-        head = head.getLink()
+        head = head.getLink(); 
     }
 }
