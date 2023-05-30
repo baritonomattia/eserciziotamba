@@ -10,9 +10,9 @@ public class Clienti {
         cliente = new TreeMap<Integer, Cliente>(); 
     }
 
-    public void aggiungi(Cliente cliente) throws ClienteNonEsiste {
-        if(!cliente.containsKey(cliente.getCodiceCliente())){
-            cliente.put(cliente.getCodiceCliente(), cliente.clone()); 
+    public void aggiungi(Cliente a) throws ClienteNonEsiste {
+        if(!cliente.containsKey(a.getCodiceCliente())){
+            cliente.put(a.getCodiceCliente(), a.clone());
         
         }else{
             throw new ClienteNonEsiste(); 
@@ -20,14 +20,16 @@ public class Clienti {
     }
 
     public void elimina(String codice) throws ClienteNonEsiste{
-        if(cliente.containsKey(codice)) return cliente.get(codice).clone(); 
+        if(cliente.containsKey(codice)) cliente.get(codice).clone(); 
         else throw new ClienteNonEsiste(); 
     }
 
     public ArrayList<Cliente> trovaCliente(String numero){
         ArrayList<Cliente> cliente_numero = new ArrayList<Cliente>(cliente.size()); 
         for(Cliente cliente : cliente.values()){
-            if(cliente.get)
+            if(cliente.getNumeroTelefono() == numero){
+                cliente.toString(); 
+            }
         }
     }
 }

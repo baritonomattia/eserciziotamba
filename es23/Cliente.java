@@ -1,11 +1,11 @@
 package es23;
 
 public class Cliente {
-    private String codiceCliente, cognomeCliente, nomeCliente, indirizzoCliente, cittaCliente, dataTelefonata, OraTelefonata, codiceDipendente, CognomeDipendente, nomeDipendente;
+    private String codiceCliente, cognomeCliente, nomeCliente, indirizzoCliente, cittaCliente, dataTelefonata, OraTelefonata, codiceDipendente, CognomeDipendente, nomeDipendente, numeroTelefono;
 
     public Cliente(String codiceCliente, String cognomeCliente, String nomeCliente, String indirizzoCliente,
             String cittaCliente, String dataTelefonata, String oraTelefonata, String codiceDipendente,
-            String cognomeDipendente, String nomeDipendente) {
+            String cognomeDipendente, String nomeDipendente, String numeroTelefono) {
         this.codiceCliente = codiceCliente;
         this.cognomeCliente = cognomeCliente;
         this.nomeCliente = nomeCliente;
@@ -16,6 +16,7 @@ public class Cliente {
         this.codiceDipendente = codiceDipendente;
         CognomeDipendente = cognomeDipendente;
         this.nomeDipendente = nomeDipendente;
+        this.numeroTelefono = numeroTelefono;
     }
 
     public String getCodiceCliente() {
@@ -98,14 +99,22 @@ public class Cliente {
         this.nomeDipendente = nomeDipendente;
     }
 
+    public String getNumeroTelefono() {
+        return numeroTelefono;
+    }
+
+    public void setNumeroTelefono(String numeroTelefono) {
+        this.numeroTelefono = numeroTelefono;
+    }
+
+    @Override
     public String toString() {
         return "Cliente [codiceCliente=" + codiceCliente + ", cognomeCliente=" + cognomeCliente + ", nomeCliente="
                 + nomeCliente + ", indirizzoCliente=" + indirizzoCliente + ", cittaCliente=" + cittaCliente
                 + ", dataTelefonata=" + dataTelefonata + ", OraTelefonata=" + OraTelefonata + ", codiceDipendente="
                 + codiceDipendente + ", CognomeDipendente=" + CognomeDipendente + ", nomeDipendente=" + nomeDipendente
-                + "]";
+                + ", numeroTelefono=" + numeroTelefono + "]";
     }
 
-    
     
 }
