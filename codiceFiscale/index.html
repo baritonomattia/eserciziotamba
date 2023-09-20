@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codice fiscale</title>
+
+</head>
+<body>
+    inserisci nome <input type="text" id="nome"> <br><br>
+    inserisci cognome <input type="text" id="cognome"> <br><br>
+    inserisci giorno <input type="number" id="giorno" min="1" max ="31"> <br><br>
+    inserisci mese <input type="number" id="mese" min="1" max ="12"> <br><br>
+    inserisci anno <input type="number" id="anno"> <br><br>
+
+    <form>
+        <label for="sesso">inserisci sesso</label>
+      <select name="sesso" id="sesso">
+        <option value="m">M</option>
+        <option value="f">F</option>
+      </select>
+    </form> <br><br>
+
+    <form>
+        <label for="luogo">inserisci luogo di nascita </label>
+      <select name="luogo" id="luogo">
+        <option value="brescia">brescia</option>
+        <option value="milano">milano</option>
+        <option value="roma">roma</option>
+        <option value="napoli">napoli</option>
+      </select>
+    </form> <br><br>
+    
+    <button type="submit" id="btninvio">calcola</button>  
+    <output id="risultato"></output>
+    <script src="main.js"></script>
+</body>
+</html>
